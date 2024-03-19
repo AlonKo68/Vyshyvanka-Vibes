@@ -54,12 +54,15 @@ button {
     outline-offset: -1px;
 }
 .header-nav-link,
-.header-address-link {
+.header-address-link,
+.footer-menu-link {
     font-size: 14px;
 }
 .header-nav-link,
 .header-address-link,
-.hero-title {
+.hero-title,
+.footer-menu-link,
+.footer-slogan {
     font-weight: 400;
 }
 .about-desc,
@@ -93,7 +96,13 @@ button {
     font-size: 44px;
     font-weight: 500;
     line-height: 1.45;
+}
+.about-subject,
+.collection-subject,
+.testimonials-subject
+.footer-slogan {
     letter-spacing: -0.03em;
+    
 }
 .collection-captain,
 .collection-desc {
@@ -145,11 +154,13 @@ button {
 }
 .header-address-item {
 }
-.header-nav-link {
+.header-nav-link,
+.footer-menu-link {
     line-height: 1.29;
 }
 .header-nav-link,
-.hero-btn-link {
+.hero-btn-link,
+.footer-menu-link {
     text-transform: uppercase; 
 }
 .header-address {
@@ -222,6 +233,11 @@ button {
     border-radius: 15px;
     border: 1px solid rgba(252, 249, 249, 0.10);
     margin-left: 141px;
+
+    /* transition-property: border;
+    transition-duration: 30ms;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-delay: 3s; */
 }
 .hero-btn-link {
     display: flex;
@@ -389,14 +405,14 @@ button {
 }
 
 /* footer */
-.footer {}
-
+.footer {
+}
 .footer-container {
     background-image: url(..//images/6_footer/image-bg.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right top;
+    background-size: 594px 527px;
 }
-
 .footer-menu-list {
     display: flex;
     gap: 25px;
@@ -405,23 +421,14 @@ button {
 }
 .footer-menu-list {}
 .footer-menu-item {}
+
 .footer-menu-link {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    /* 128.571% */
-    text-transform: uppercase;
 }
 .footer-slogan {
     width: 754px;
     padding-bottom: 40px;
  
     font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 74px;
-    /* 115.625% */
-    letter-spacing: -1.92px;
+    line-height: 1.16;
 }
 .accent {}
